@@ -16,4 +16,13 @@
       "url": "https://play.google.com/store/apps/details?id=com.luckystargame.texaspoker",
     }
   }  
+}, {
+  "icon": "https://i.imgur.com/2pJ4ODp.png",
+  "name": "瘋麻將16張: 手機台式麻將樂園",
+  "platform": {
+    "android": {
+      "id": "com.cubeage.fmj16.app",
+      "url": "https://play.google.com/store/apps/details?id=com.cubeage.fmj16.app",
+    }
+  }  
 }]

@@ -7,4 +7,13 @@
       "url": "https://play.google.com/store/apps/details?id=com.tntmobi.btttw2",
     }
   }  
+}, {
+  "icon": "https://i.imgur.com/CNFji1K.png",
+  "name": "Fun Texas Holdem: Poker Clash",
+  "platform": {
+    "android": {
+      "id": "com.luckystargame.texaspoker",
+      "url": "https://play.google.com/store/apps/details?id=com.luckystargame.texaspoker",
+    }
+  }  
 }]

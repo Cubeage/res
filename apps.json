@@ -25,4 +25,13 @@
       "url": "https://play.google.com/store/apps/details?id=com.cubeage.fmj16.app",
     }
   }  
+}, {
+  "icon": "https://i.imgur.com/9Fc9ABR.png",
+  "name": "Blackjack Showdown: 21 Duel",
+  "platform": {
+    "android": {
+      "id": "com.cubeage.blackjack.app",
+      "url": "https://play.google.com/store/apps/details?id=com.cubeage.blackjack.app",
+    }
+  }  
 }]

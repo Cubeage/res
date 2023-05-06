@@ -1,4 +1,13 @@
 [{
+  "icon": "https://i.imgur.com/1rMGM1f.png",
+  "name": "香港麻將大亨: 3D麻將冒險之旅",
+  "platform": {
+    "android": {
+      "id": "com.crazycube.hkmahjongtycoon.app",
+      "url": "https://play.google.com/store/apps/details?id=com.crazycube.hkmahjongtycoon.app",
+    }
+  }  
+}, {
   "icon": "https://i.imgur.com/KB8jCtw.png",
   "name": "大老二大亨",
   "platform": {

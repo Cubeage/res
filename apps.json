@@ -7,40 +7,4 @@
       "url": "https://play.google.com/store/apps/details?id=com.crazycube.hkmahjongtycoon.app",
     }
   }  
-}, {
-  "icon": "https://i.imgur.com/KB8jCtw.png",
-  "name": "大老二大亨",
-  "platform": {
-    "android": {
-      "id": "com.tntmobi.btttw2",
-      "url": "https://play.google.com/store/apps/details?id=com.tntmobi.btttw2",
-    }
-  }  
-}, {
-  "icon": "https://i.imgur.com/CNFji1K.png",
-  "name": "Fun Texas Holdem: Poker Clash",
-  "platform": {
-    "android": {
-      "id": "com.luckystargame.texaspoker",
-      "url": "https://play.google.com/store/apps/details?id=com.luckystargame.texaspoker",
-    }
-  }  
-}, {
-  "icon": "https://i.imgur.com/2pJ4ODp.png",
-  "name": "瘋麻將16張: 手機台式麻將樂園",
-  "platform": {
-    "android": {
-      "id": "com.cubeage.fmj16.app",
-      "url": "https://play.google.com/store/apps/details?id=com.cubeage.fmj16.app",
-    }
-  }  
-}, {
-  "icon": "https://i.imgur.com/9Fc9ABR.png",
-  "name": "Blackjack Showdown: 21 Duel",
-  "platform": {
-    "android": {
-      "id": "com.cubeage.blackjack.app",
-      "url": "https://play.google.com/store/apps/details?id=com.cubeage.blackjack.app",
-    }
-  }  
 }]

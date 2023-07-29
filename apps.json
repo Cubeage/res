@@ -5,6 +5,10 @@
     "android": {
       "id": "com.crazycube.hkmahjongtycoon.app",
       "url": "https://play.google.com/store/apps/details?id=com.crazycube.hkmahjongtycoon.app",
+    },
+    "ios": {
+      "id": "1252568150",
+      "url": "https://apps.apple.com/hk/app/%E7%98%8B%E9%BA%BB%E5%B0%8716%E5%BC%B5/id1252568150",
     }
   }  
 }]

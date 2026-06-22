@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "repo": "Cubeage/res",
+    "name": "Cubeage Res",
+    "lifecycle": "active",
+    "layer": "other",
+    "summary": "Small Cubeage resource and metadata catalog repository that currently owns app identity, icon, and app-store link data in apps.json.",
+    "goals": [
+      "Maintain Cubeage app metadata in a clear source-controlled catalog.",
+      "Keep app identifiers, store URLs, and icon references reviewable.",
+      "Prevent resource metadata from becoming product-specific application logic."
+    ],
+    "nonGoals": [
+      "Do not own the applications listed in the catalog, their store submissions, or their runtime behavior.",
+      "Do not own central CI runner, enterprise release bot, platform preview, or deployment behavior.",
+      "Do not store secrets, service-specific feature flags, or unrelated runtime configuration in this repository."
+    ]
+  },
+  "boundaries": {
+    "owns": [
+      {
+        "name": "cubeage-app-metadata-catalog",
+        "description": "The apps.json catalog of Cubeage app identity, icon, and store-link metadata."
+      }
+    ],
+    "doesNotOwn": [
+      "Application runtime code, app-store release operations, billing, account systems, or game behavior.",
+      "Central Sylphx preview platform, central CI runner capacity, branch protection policy, or enterprise release bot behavior.",
+      "Secrets, environment-specific runtime configuration, or service-specific feature flags."
+    ],
+    "publicSurfaces": [
+      {
+        "type": "manifest",
+        "name": "Cubeage app metadata catalog",
+        "location": "apps.json"
+      }
+    ],
+    "allowedDependencies": [],
+    "forbiddenCouplings": [
+      "Do not add application runtime behavior or product-specific feature logic to the resource catalog.",
+      "Do not store credentials, private keys, tokens, or environment-specific secrets.",
+      "Do not let one consuming application redefine catalog semantics for every other consumer.",
+      "Do not encode central release-bot, runner-capacity, secret-management, or branch-protection policy as catalog data."
+    ]
+  },
+  "documentation": {
+    "adr": {
+      "path": "docs/adr/",
+      "status": "planned"
+    },
+    "specs": {
+      "path": "apps.json",
+      "status": "present"
+    },
+    "catalog": {
+      "path": ".doctrine/project.json",
+      "status": "present"
+    },
+    "runbooks": {
+      "path": "PROJECT.md",
+      "status": "present"
+    },
+    "generatedReferences": {
+      "path": "apps.json",
+      "status": "not-applicable"
+    }
+  },
+  "delivery": {
+    "ciModel": "none",
+    "requiredContexts": [],
+    "deployPath": "No CI workflow, package release, or deployment path is currently configured. Catalog updates land through source control and are consumed by downstream projects if they read apps.json.",
+    "productionProof": "Catalog changes require syntax validation and a consumer smoke check when a consuming application or service is known. Manifest-only changes are proven by the doctrine project-control audit.",
+    "recoveryClass": "source-revertable"
+  },
+  "adoption": {
+    "status": "baseline",
+    "gaps": [
+      {
+        "id": "catalog-syntax-not-enforced",
+        "description": "The apps.json catalog is not yet protected by a required syntax or schema check.",
+        "owner": "Cubeage/res",
+        "target": "Future catalog validation issue"
+      },
+      {
+        "id": "central-admission-not-adopted",
+        "description": "Repository has not adopted central ADR-29 stable admission fan-in contexts.",
+        "owner": "SylphxAI/doctrine#61",
+        "target": "Central CI runner and admission control plane"
+      }
+    ]
+  }
+}
